@@ -1,11 +1,13 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/tominabox1/zmk/tree/working_hid2
+      url-base: https://github.com/zmkfirmware
+    - name: tominabox1
+      url-base: https://github.com/tominabox1/
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: tominabox1
+      revision: working_hid2
       import: app/west.yml
   self:
     path: config
