@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/tominabox1/zmk/tree/working_hid2
   projects:
     - name: zmk
       remote: zmkfirmware
