@@ -10,4 +10,5 @@ manifest:
       revision: working_hid2
       import: app/west.yml
   self:
-    path: config
+    path: config/microdox
+    path: config/qaz
