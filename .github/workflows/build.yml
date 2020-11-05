@@ -53,7 +53,7 @@ jobs:
       - name: QAZ Kconfig file
         run: cat qaz/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp qaz/zephyr/zmk.uf2 qaz/qaz_nice_nano.uf2
+        run: cp qaz/zephyr/zmk.uf2 qaz_nice_nano.uf2
       - name: Archive (QAZ)
         uses: actions/upload-artifact@v2
         with:
@@ -67,7 +67,7 @@ jobs:
       - name: Microdox_Left Kconfig file
         run: cat md_left/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp md_left/zephyr/zmk.uf2 md_left/microdox_left_nice_nano.uf2
+        run: cp md_left/zephyr/zmk.uf2 microdox_left_nice_nano.uf2
       - name: Archive (Microdox_Left)
         uses: actions/upload-artifact@v2
         with:
@@ -81,7 +81,7 @@ jobs:
       - name: Microdox_Right Kconfig file
         run: cat md_right/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp md_right/zephyr/zmk.uf2 md_right/microdox_right_nice_nano.uf2
+        run: cp md_right/zephyr/zmk.uf2 microdox_right_nice_nano.uf2
       - name: Archive (Microdox_Right)
         uses: actions/upload-artifact@v2
         with:
