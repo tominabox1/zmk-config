@@ -1,4 +1,4 @@
-o/*
+/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -88,7 +88,7 @@ o/*
             bindings = <
     &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    
     &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5) &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp EQL &kp MINUS       
-    &kp DEL &none &none &kp LS(N9) &kp LS(MINUS) &none &kp LS(N0) &none &kp DOT &kp BSLH
+    &kp DEL &none &kp LBKT &kp LS(N9) &kp LS(MINUS) &none &kp LS(N0) &kp RBKT &kp DOT &kp BSLH
     &none &none &trans &trans &kp RET &kp FSLH
             >;
         };
