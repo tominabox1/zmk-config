@@ -5,8 +5,8 @@ manifest:
     - name: tominabox1
       url-base: https://github.com/tominabox1/
   projects:
-    - name: zmkfirmware
-      remote: zmk
+    - name: zmk
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
