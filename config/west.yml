@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/Nicell/
   projects:
     - name: zmk
-      remote: nicell
-      revision: underglow/ext-power
+      remote: tominabox1
+      revision: working_hid2
       import: app/west.yml
   self:
     path: config
