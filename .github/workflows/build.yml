@@ -52,6 +52,9 @@ jobs:
           args: 'build "-s zmk/app -b nice_nano -d qaz -- -DSHIELD=qaz -DZMK_CONFIG=/github/workspace/config"'
       - name: QAZ Kconfig file
         run: cat qaz/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: QAZ DTS File
+        if: ${{ always() }}
+        run: cat -n qaz/zephyr/nice_nano.dts.pre.tmp
       - name: Rename zmk.uf2
         run: cp qaz/zephyr/zmk.uf2 qaz_nice_nano.uf2
       - name: Archive (QAZ)
@@ -66,6 +69,9 @@ jobs:
           args: 'build "-s zmk/app -b nice_nano -d md_left -- -DSHIELD=microdox_left -DZMK_CONFIG=/github/workspace/config"'
       - name: Microdox_Left Kconfig file
         run: cat md_left/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Microdox_Left DTS File
+        if: ${{ always() }}
+        run: cat -n md_left/zephyr/nice_nano.dts.pre.tmp
       - name: Rename zmk.uf2
         run: cp md_left/zephyr/zmk.uf2 microdox_left_nice_nano.uf2
       - name: Archive (Microdox_Left)
