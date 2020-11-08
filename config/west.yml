@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: tominabox1
       url-base: https://github.com/tominabox1/
+    - name: nicell
+      url-base: https://github.com/Nicell/
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: nicell
+      revision: underglow/ext-power
       import: app/west.yml
   self:
     path: config
