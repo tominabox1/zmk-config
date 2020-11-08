@@ -54,7 +54,7 @@ jobs:
         run: cat qaz/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: QAZ DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+        run: cat -n qaz/zephyr/nice_nano.dts.pre.tmp
       - name: Rename zmk.uf2
         run: cp qaz/zephyr/zmk.uf2 qaz_nice_nano.uf2
       - name: Archive (QAZ)
@@ -71,7 +71,7 @@ jobs:
         run: cat md_left/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Microdox_Left DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+        run: cat -n md_left/zephyr/nice_nano.dts.pre.tmp
       - name: Rename zmk.uf2
         run: cp md_left/zephyr/zmk.uf2 microdox_left_nice_nano.uf2
       - name: Archive (Microdox_Left)
