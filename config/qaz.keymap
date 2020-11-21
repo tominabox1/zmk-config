@@ -83,7 +83,7 @@
 			key_positions = <9 10>;
 			bindings = <&kp ESC>;
 		};
-    	 };
+        };
     };
 
 / {
