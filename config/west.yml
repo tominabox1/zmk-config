@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
-      remote: okke
+      remote: tominabox1
       revision: chormbos
       import: app/west.yml
   self:
