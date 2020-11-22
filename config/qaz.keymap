@@ -73,14 +73,14 @@
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_ONE";
 			timeout_ms = <30>;
-			key_positions = <9 10>;
+			key_positions = <8 9>;
 			bindings = <&kp BSPC>;
 		};
         combo_two: combo_two {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_TWO";
 			timeout_ms = <30>;
-			key_positions = <9 10>;
+			key_positions = <0 1>;
 			bindings = <&kp ESC>;
 		};
         };
