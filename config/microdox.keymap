@@ -82,6 +82,13 @@
 			key_positions = <0 1>;
 			bindings = <&kp ESC>;
 		};
+	combo_three: combo_three {
+			compatible = "zmk,behavior-combo";
+			label = "COMBO_THREE";
+			timeout_ms = <30>;
+			key_positions = <11 12>;
+			bindings = <&kp TAB>;
+		};
     	 };
     };
 
