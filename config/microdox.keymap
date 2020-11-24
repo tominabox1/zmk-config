@@ -81,7 +81,7 @@
 			label = "COMBO_TWO";
 			timeout-ms = <30>;
 			key-positions = <0 1>;
-			bindings = <&kp ESC>;
+			bindings = <&com_col GRAVE ESC>;
 		};
 	combo_three {
 			compatible = "zmk,behavior-combo";
