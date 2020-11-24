@@ -68,25 +68,26 @@
             flavor = "balanced";
 		 	bindings = <&kp>, <&kp>;
 	     	};
-		        combo_one: combo_one {
+		
+	combo_one {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_ONE";
-			timeout_ms = <30>;
-			key_positions = <8 9>;
+			timeout-ms = <30>;
+			key-positions = <8 9>;
 			bindings = <&kp BSPC>;
 		};
-        combo_two: combo_two {
+        combo_two {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_TWO";
-			timeout_ms = <30>;
-			key_positions = <0 1>;
+			timeout-ms = <30>;
+			key-positions = <0 1>;
 			bindings = <&kp ESC>;
 		};
-	combo_three: combo_three {
+	combo_three {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_THREE";
-			timeout_ms = <30>;
-			key_positions = <11 12>;
+			timeout-ms = <30>;
+			key-positions = <11 12>;
 			bindings = <&kp TAB>;
 		};
     	 };
