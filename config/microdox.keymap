@@ -90,14 +90,6 @@
 			key-positions = <11 12>;
 			bindings = <&kp TAB>;
 		};
-    combo_three {
-			compatible = "zmk,behavior-combo";
-			label = "COMBO_THREE";
-			timeout-ms = <30>;
-			key-positions = <11 12>;
-			bindings = <&kp TAB>;
-		};
-
     combo_four {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_FOUR";
@@ -105,7 +97,6 @@
 			key-positions = <33 35>;
 			bindings = <&kp C_NEXT>;
 		};
-
      combo_five {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_FIVE";
@@ -113,7 +104,6 @@
 			key-positions = <33 34>;
 			bindings = <&kp C_PREV>;
 		};
-
         combo_six {
 			compatible = "zmk,behavior-combo";
 			label = "COMBO_SIX";
@@ -121,8 +111,7 @@
 			key-positions = <33 35>;
 			bindings = <&kp C_PP>;
 		};
-
-    	 };
+   	 };
     };
 
 / {
