@@ -111,6 +111,13 @@
 			key-positions = <33 35>;
 			bindings = <&kp C_PP>;
 		};
+		combo_seven {
+			compatible = "zmk,behavior-combo";
+			label = "COMBO_SEVEN";
+			timeout-ms = <30>;
+			key-positions = <7 8 9>;
+			bindings = <&kp C_DEL>;
+		};
    	 };
     };
 
