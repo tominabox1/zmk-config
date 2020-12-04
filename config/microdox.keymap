@@ -116,7 +116,7 @@
 			label = "COMBO_SEVEN";
 			timeout-ms = <30>;
 			key-positions = <7 8 9>;
-			bindings = <&kp C_DEL>;
+			bindings = <&kp DEL>;
 		};
    	 };
     };
