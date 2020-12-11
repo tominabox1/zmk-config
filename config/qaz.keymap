@@ -90,6 +90,34 @@
 			key-positions = <11 12>;
 			bindings = <&kp TAB>;
 		};
+		combo_four {
+			compatible = "zmk,behavior-combo";
+			label = "COMBO_FOUR";
+			timeout-ms = <30>;
+			key-positions = <35 36>;
+			bindings = <&kp C_NEXT>;
+		};
+     combo_five {
+			compatible = "zmk,behavior-combo";
+			label = "COMBO_FIVE";
+			timeout-ms = <30>;
+			key-positions = <34 35>;
+			bindings = <&kp C_PREV>;
+		};
+        combo_six {
+			compatible = "zmk,behavior-combo";
+			label = "COMBO_SIX";
+			timeout-ms = <30>;
+			key-positions = <34 36>;
+			bindings = <&kp C_PP>;
+		};
+		combo_seven {
+			compatible = "zmk,behavior-combo";
+			label = "COMBO_SEVEN";
+			timeout-ms = <30>;
+			key-positions = <7 8 9>;
+			bindings = <&kp DEL>;
+		};
         };
     };
 
