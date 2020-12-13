@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: tominabox1
-      revision: chormbos
+      revision: chormbo2.4
       import: app/west.yml
   self:
     path: config
