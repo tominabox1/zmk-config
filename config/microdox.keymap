@@ -123,7 +123,7 @@
  			label = "CTRL_COLON";
  			#binding-cells = <0>;
  			bindings = <&kp COMMA>, <&kp SEMI>;
-                        mods = <(MOD_LCTL|MOD_LSFT)>;
+            mods = <(MOD_LALT|MOD_LSFT)>;
  		};
    	 };
     };
