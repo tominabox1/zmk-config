@@ -118,13 +118,13 @@
 			key-positions = <7 8 9>;
 			bindings = <&kp DEL>;
 		};
-		gresc: ccln {
- 			compatible = "zmk,behavior-mod-morph";
- 			label = "Ctrl-Colon";
- 			#binding-cells = <0>;
- 			bindings = <&kp CMMA>, <&kp COLN>;
-             mods = <(MOD_LCTL|MOD_LSFT)>;
- 		};
+		// gresc: ccln {
+ 		// 	compatible = "zmk,behavior-mod-morph";
+ 		// 	label = "Ctrl-Colon";
+ 		// 	#binding-cells = <0>;
+ 		// 	bindings = <&kp CMMA>, <&kp COLN>;
+        //     mods = <(MOD_LCTL|MOD_LSFT)>;
+ 		// };
    	 };
     };
 
