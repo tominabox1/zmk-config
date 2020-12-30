@@ -97,13 +97,16 @@ jobs:
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
         id: west-build-ble-chiffre
         with:
-          args: 'build "-s zmk/app -p --board ble_chiffre  -DZMK_CONFIG=/github/workspace/config"'
+          args: 'build "-s zmk/app -p --board ble_chiffre -DZMK_CONFIG=/github/workspace/config"'
       - name: BLe_Chƒƒre Kconfig file
-        run: cat md_right/zephyr/.config | grep -v "^#" | grep -v "^$"
+        run: cat ble_chiffre/zephyr/.config | grep -v "^#" | grep -v "^$"
+      # - name: BLe Chiffre DTS File
+      #   if: ${{ always() }}
+      #   run: cat -n ble_chiffre/zephyr/ble_chiffre.dts.pre.tmp
       - name: Rename zmk.uf2
-        run: cp md_right/zephyr/zmk.uf2 ble_chiffre.uf2
+        run: cp ble_chiffre/zephyr/zmk.uf2 ble_chiffre.uf2
       - name: Archive (BLe_Chiffre)
         uses: actions/upload-artifact@v2
         with:
           name: ble_chiffre
-          path: ble_chiffreeee.uf2
+          path: ble_chiffre.uf2
