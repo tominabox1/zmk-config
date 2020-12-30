@@ -93,7 +93,7 @@ jobs:
         with:
           name: microdox_right
           path: microdox_right_nice_nano.uf2
-        name: West Build (BLe Chiffre)
+      - name: West Build (BLe Chiffre)
         uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
         id: west-build-ble-chiffre
         with:
