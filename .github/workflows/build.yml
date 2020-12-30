@@ -93,3 +93,17 @@ jobs:
         with:
           name: microdox_right
           path: microdox_right_nice_nano.uf2
+        name: West Build (BLe Chiffre)
+        uses: 'docker://zmkfirmware/zephyr-west-action-arm:latest'
+        id: west-build-ble-chiffre
+        with:
+          args: 'build "-s zmk/app -p --board ble_chiffre  -DZMK_CONFIG=/github/workspace/config"'
+      - name: BLe_Chƒƒre Kconfig file
+        run: cat md_right/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Rename zmk.uf2
+        run: cp md_right/zephyr/zmk.uf2 ble_chiffre.uf2
+      - name: Archive (BLe_Chiffre)
+        uses: actions/upload-artifact@v2
+        with:
+          name: ble_chiffre
+          path: ble_chiffreeee.uf2
