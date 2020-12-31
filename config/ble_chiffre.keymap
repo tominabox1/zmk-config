@@ -101,30 +101,30 @@
 			key-positions = <11 12>;
 			bindings = <&kp TAB>;
 		};
-	mnxt_combo
-		{
-			compatible = "zmk,behavior-combo";
-			label = "NEXT_COMBO";
-			timeout-ms = <30>;
-			key-positions = <34 35>;
-			bindings = <&kp C_NEXT>;
-		};
-	mprev_combo
-		{
-			compatible = "zmk,behavior-combo";
-			label = "PREV_COMBO";
-			timeout-ms = <30>;
-			key-positions = <33 34>;
-			bindings = <&kp C_PREV>;
-		};
-	mpp_combo
-		{
-			compatible = "zmk,behavior-combo";
-			label = "PP_COMBO";
-			timeout-ms = <30>;
-			key-positions = <33 35>;
-			bindings = <&kp C_PP>;
-		};
+	// mnxt_combo
+	// 	{
+	// 		compatible = "zmk,behavior-combo";
+	// 		label = "NEXT_COMBO";
+	// 		timeout-ms = <30>;
+	// 		key-positions = <34 35>;
+	// 		bindings = <&kp C_NEXT>;
+	// 	};
+	// mprev_combo
+	// 	{
+	// 		compatible = "zmk,behavior-combo";
+	// 		label = "PREV_COMBO";
+	// 		timeout-ms = <30>;
+	// 		key-positions = <33 34>;
+	// 		bindings = <&kp C_PREV>;
+	// 	};
+	// mpp_combo
+	// 	{
+	// 		compatible = "zmk,behavior-combo";
+	// 		label = "PP_COMBO";
+	// 		timeout-ms = <30>;
+	// 		key-positions = <33 35>;
+	// 		bindings = <&kp C_PP>;
+	// 	};
 	del_combo
 		{
 			compatible = "zmk,behavior-combo";
