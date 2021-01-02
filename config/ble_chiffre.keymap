@@ -111,7 +111,7 @@
 		};
 		combo_mpp 
 		{
-			timeout-ms = <30>;o
+			timeout-ms = <30>;
 			key-positions = <27 29>;
 			bindings = <&kp C_PP>;
 		};
