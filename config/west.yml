@@ -10,8 +10,8 @@ manifest:
       url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: nicell
+      revision: ext-power/init-priority
       import: app/west.yml
   self:
     path: config
