@@ -75,8 +75,8 @@
 		compatible = "zmk,battery-voltage-divider";
 		label = "BATTERY";
 		io-channels = <&adc 2>;
-		output-ohms = <2000000>;
-		full-ohms = <(2000000 + 806000)>;
+		output-ohms = <150000>;
+		full-ohms = <(150000 + 802000)>;
 	};
 };
 
