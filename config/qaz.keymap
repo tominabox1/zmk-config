@@ -127,7 +127,7 @@
 		{
 			timeout-ms = <40>;
 			key-positions = <20 28>;
-			bindings = <&rst>;
+			bindings = <&rst 0>;
 		};
 	};
 };
