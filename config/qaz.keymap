@@ -13,6 +13,7 @@
 #define DEFAULT 0
 #define NUM_SYM 1
 #define NAV     2
+#define TRAVEL	3
 
 / {
 	behaviors {
@@ -129,6 +130,19 @@
 			key-positions = <20 28>;
 			bindings = <&rst 0 0>;
 		};
+		combo_to_travel 
+		{
+			timeout-ms = <40>;
+			key-positions = <3 4 5 6>;
+			bindings = <&to 3>;
+		};
+		combo_to_base 
+		{
+			timeout-ms = <40>;
+			key-positions = <13 16>;
+			bindings = <&to 0>;
+			layers = <3>;
+		};
 	};
 };
 	
@@ -160,6 +174,14 @@
     &ext_power EP_OFF &ext_power EP_ON &trans &trans &none &kp HOME &kp LEFT &kp DOWN &kp RIGHT &kp END       
     &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none &kp PG_DN &none &none &kp BSLH
     &bt BT_CLR &none &none &none &none &kp C_PREV &kp C_PP &kp C_FF
+            >;
+        };
+    travel {
+            bindings = <
+    &none &none &none &none &none &none &none &none &none &none    
+    &none &none &none &none &kp LSFT &none &none &none &none &none       
+    &none &none &none &none &none &none &none &none &none
+    &none &none &none &none &none &none &none &none
             >;
         };
     };
