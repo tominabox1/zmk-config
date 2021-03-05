@@ -87,54 +87,63 @@
 			timeout-ms = <40>;
 			key-positions = <8 9>;
 			bindings = <&kp BSPC>;
+			layers = <0 1 2>;
 		};
 		combo_gesc 
 		{
 			timeout-ms = <30>;
 			key-positions = <0 1>;
 			bindings = <&com_col GRAVE ESC>;
+			layers = <0 1 2>;
 		};
 		combo_tab 
 		{
 			timeout-ms = <35>;
 			key-positions = <11 12>;
 			bindings = <&kp TAB>;
+			layers = <0 1 2>;
 		};
 		combo_mnxt 
 		{
 			timeout-ms = <30>;
 			key-positions = <35 36>;
 			bindings = <&kp C_NEXT>;
+			layers = <0>;
 		};
 		combo_mprev 
 		{
 			timeout-ms = <30>;
 			key-positions = <34 35>;
-			bindings = <&kp C_PREV>;	
+			bindings = <&kp C_PREV>;
+			layers = <0>;
 		};
 		combo_mpp 
 		{
 			timeout-ms = <30>;
 			key-positions = <34 36>;
 			bindings = <&kp C_PP>;
+			layers = <0>;
 		};
 		combo_del 
 		{
 			timeout-ms = <40>;
 			key-positions = <7 8 9>;
 			bindings = <&kp DEL>;
+			layers = <0 1 2>;
 		};
 		combo_reset 
 		{
 			timeout-ms = <40>;
 			key-positions = <20 28>;
 			bindings = <&rst 0 0>;
+			layers = <0>;
 		};
 		combo_to_travel 
 		{
 			timeout-ms = <40>;
 			key-positions = <3 4 5 6>;
 			bindings = <&to 3>;
+			layers = <0>;
 		};
 		combo_to_base 
 		{
