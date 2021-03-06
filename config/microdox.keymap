@@ -162,6 +162,7 @@
     &kp DEL &none &kp LBKT &kp LPAR &kp UNDER &none &kp RPAR &kp RBKT &kp DOT &kp BSLH
     &kp GRAVE &none &trans &trans &kp RET &kp FSLH
             >;
+			sensor-bindings = <&inc_dec_kp C_FF C_PREV>;
         };
 
     nav {
@@ -171,6 +172,7 @@
     &rgb_ug RGB_TOG &rgb_ug RGB_EFF &none &none &none &kp PG_DN &none &kp GRAVE &kp BSLH &kp FSLH
     &bt BT_CLR &none &trans &kp C_PREV &kp C_PP &kp C_FF
             >;
+			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
