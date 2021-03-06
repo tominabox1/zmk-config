@@ -13,6 +13,14 @@
 #define NUM_SYM 1
 #define NAV     2
 
+&left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        label = "LEFT_ENCODER";
+        a-gpios = <&pro_micro_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+    };
+
 / {
 	behaviors {
 		rst: boot_reset 
@@ -125,6 +133,13 @@
 };
 
 / {
+	sensors {
+		compatible = "zmk,keymap-sensors";
+		sensors = <&left_encoder>;
+	};
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -135,6 +150,7 @@
     &kp Z &kp X &kp C &kp V &kp B &kp K &kp M &com_col SEMI COMMA &kp DOT &kp FSLH
     &kp ESC &kp TAB &bh 2 RET &bh 1 SPACE &bh 2 RET &kp C_PP
             >;
+			sensor-bindings = <&inc_dec_kp C_FF C_PREV>;
         };
 
         num_sym {
@@ -153,7 +169,6 @@
     &rgb_ug RGB_TOG &rgb_ug RGB_EFF &none &none &none &kp PG_DN &none &kp GRAVE &kp BSLH &kp FSLH
     &bt BT_CLR &none &trans &kp C_PREV &kp C_PP &kp C_FF
             >;
-			sensor-bindings = <&inc_dec_kp C_FF C_PREV>;
         };
     };
 };
