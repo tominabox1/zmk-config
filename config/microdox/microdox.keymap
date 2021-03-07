@@ -107,24 +107,24 @@
 			key-positions = <11 12>;
 			bindings = <&kp TAB>;
 		};
-		combo_mnxt 
-		{
-			timeout-ms = <30>;
-			key-positions = <34 35>;
-			bindings = <&kp C_NEXT>;
-		};
-		combo_mprev 
-		{
-			timeout-ms = <30>;
-			key-positions = <33 34>;
-			bindings = <&kp C_PREV>;	
-		};
-		combo_mpp 
-		{
-			timeout-ms = <30>;
-			key-positions = <33 35>;
-			bindings = <&kp C_PP>;
-		};
+		// combo_mnxt 
+		// {
+		// 	timeout-ms = <30>;
+		// 	key-positions = <34 35>;
+		// 	bindings = <&kp C_NEXT>;
+		// };
+		// combo_mprev 
+		// {
+		// 	timeout-ms = <30>;
+		// 	key-positions = <33 34>;
+		// 	bindings = <&kp C_PREV>;	
+		// };
+		// combo_mpp 
+		// {
+		// 	timeout-ms = <30>;
+		// 	key-positions = <33 35>;
+		// 	bindings = <&kp C_PP>;
+		// };
 		combo_del 
 		{
 			timeout-ms = <40>;
